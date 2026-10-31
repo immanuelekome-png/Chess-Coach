@@ -68,4 +68,29 @@ test('Brilliant requires an offered piece and a sound evaluated capture',()=>run
  if(classifyReviewMove(e,['e2d3'])==='Brilliant')throw Error('No offered capture');if(classifyReviewMove({...e,afterAnalysis:{...e.afterAnalysis,best:'c4d3'}},['e2d3'])!=='Brilliant')throw Error('Sound sacrifice missing');if(classifyReviewMove({...e,afterAnalysis:{cp:200,mate:null,best:'c4d3'}},['e2d3'])==='Brilliant')throw Error('Unsound sacrifice');
  const m2=lessonMove(before,'e2d1'),a2=make(before,m2);if(classifyReviewMove({...e,m:m2,after:a2,best:m2},['e2d1'])==='Brilliant')throw Error('Quiet move falsely brilliant');
 }`));
+test('Academy promotion waits for a learner choice and rejects wrong pieces without moving',()=>run(`{
+ openLesson('Underpromotion','','');academyCompleted.delete('Underpromotion');
+ lessonTap(14);lessonTap(6);if(!academyState.pendingPromotion||academyState.step!==0||academyState.states[0].b[14]!=='P')throw Error('Promotion auto-selected');
+ for(const piece of ['q','r','b']){if(!academyState.pendingPromotion){lessonTap(14);lessonTap(6);}chooseLessonPromotion(piece);if(academyState.step!==0||academyCompleted.has('Underpromotion')||academyState.states[0].b[14]!=='P')throw Error('Wrong choice advanced');}
+ lessonTap(14);lessonTap(6);chooseLessonPromotion('n');if(academyState.step!==1||academyState.states[1].b[6]!=='N'||!academyCompleted.has('Underpromotion'))throw Error('Knight choice not saved');
+ const final=fen(academyState.states[1]);lessonTap(21);lessonTap(22);if(academyState.step!==1||fen(academyState.states[1])!==final)throw Error('Completed puzzle accepted extra move');
+}`));
+test('Queen-promotion challenge uses the same explicit choice flow',()=>run(`{
+ openLesson('Promote the pawn','','');lessonTap(8);lessonTap(0);chooseLessonPromotion('n');if(academyState.step!==0)throw Error('Wrong queen challenge accepted');lessonTap(8);lessonTap(0);chooseLessonPromotion('q');if(academyState.step!==1||academyState.states[1].b[0]!=='Q')throw Error('Queen choice failed');
+}`));
+test('central-pawn teaching names undeveloped pieces and a concrete tradeoff',()=>assert.match(run(`(()=>{const b=initial(),m=lessonMove(b,'e2e4');return positionPlan(b,m,make(b,m));})()`),/central space.*b1, c1, f1, g1.*delay/));
+test('king-diagonal warning recognizes f3 without inventing an immediate queen move',()=>{const t=run(`(()=>{const b=initial(),m=lessonMove(b,'f2f3');return positionPlan(b,m,make(b,m));})()`);assert.match(t,/h4–e1.*whether the opposing queen can reach/);assert.doesNotMatch(t,/can play.*Qh4/)});
+test('passed pawn recognition checks adjacent files, both colors and direction',()=>run(`{
+ let s=parseAcademyFen('7k/8/8/8/4P3/8/8/K7 w - - 0 1');if(!passedPawn(s,36))throw Error('Passed missing');s.b[27]='p';if(passedPawn(s,36))throw Error('Adjacent pawn ignored');s.b[27]='.';s.b[43]='p';if(!passedPawn(s,36))throw Error('Behind pawn blocks');
+ s=parseAcademyFen('7k/8/8/4p3/8/8/8/K7 b - - 0 1');if(!passedPawn(s,28))throw Error('Black direction');s.b[35]='P';if(passedPawn(s,28))throw Error('Black adjacent pawn ignored');
+}`));
+test('rook plans distinguish open files and Black second-rank entry',()=>assert.match(run(`(()=>{const b=parseAcademyFen('r5k1/8/8/8/8/8/8/6K1 b - - 0 1'),m=lessonMove(b,'a8e8');return positionPlan(b,m,make(b,m));})()`),/e-file is open.*second rank/));
+test('engine continuations stop at invalid moves, reject mismatched PV and preserve the input',()=>run(`{
+ const s=initial(),original=fen(s);let line=validatedLine(s,{best:'e2e4',pv:['e2e4','e7e5','a1a8']},3);if(line.length!==2||fen(s)!==original)throw Error('Invalid continuation or mutation');
+ line=validatedLine(s,{best:'d2d4',pv:['e2e4','e7e5']},3);if(line.length!==1||uciMove(line[0].m)!=='d2d4')throw Error('Stale PV accepted');
+}`));
+test('mate teaching does not append a positional plan or an imaginary response',()=>run(`{
+ let b=initial(),m,before;for(const u of ['f2f3','e7e5','g2g4','d8h4']){before=b;m=lessonMove(b,u);b=make(b,m);}
+ if(positionPlan(before,m,b)!==''||validatedLine(b,{best:'e1e2',pv:['e1e2']}).length)throw Error('Post-mate advice');
+}`));
 console.log(`${passed} core/content regression checks passed`);
