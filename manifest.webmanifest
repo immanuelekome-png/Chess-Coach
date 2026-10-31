@@ -1,0 +1,1 @@
+{"name":"Chess Coach","short_name":"Chess Coach","description":"Free offline chess practice with adjustable bot opponents and coaching","start_url":"./","scope":"./","display":"standalone","background_color":"#111b22","theme_color":"#111b22","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
