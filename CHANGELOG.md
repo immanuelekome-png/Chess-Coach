@@ -1,3 +1,12 @@
+# v3.0.0-rc.2
+
+- Undo and Redo navigate one move at a time. Continue game resumes the bot when needed.
+- Automatic post-game review includes both accuracy percentages, clickable category counts and all move scores.
+- Added Brilliant, Great, Book and Miss estimates alongside Best, Good, Inaccuracy, Mistake and Blunder.
+- Hide live review/coaching during play with a remembered checkbox.
+- Result records use separate game keys to prevent stale tabs from replacing totals.
+- Corrected discovered attack with check; disabled terminal spectator controls.
+
 # 3.0.0-rc.1
 
 - Replace shallow local evaluations in live coaching and hints with a separate, unlimited-strength Stockfish analysis worker. Show depth and label analysis estimates honestly; show an error if analysis fails.
