@@ -1,3 +1,13 @@
-Chess Coach v2.0 — Stockfish 19 Lite offline build. Upload the entire chess-coach folder to Netlify Drop. Keep engine/stockfish.js and engine/stockfish.wasm together. Bot move selection uses Stockfish when initialized. Elo labels are NOT calibrated; Stockfish UCI_Elo has a minimum, so beginner settings are not genuine 400 Elo. Review evaluations still use the experimental evaluator. Stockfish.js 19 (c) 2026 Chess.com LLC, GPLv3. Source: https://github.com/nmrugg/stockfish.js ; Stockfish source: https://github.com/official-stockfish/Stockfish . When redistributing, comply with GPLv3 and provide corresponding source and license.
+Chess Coach 3.0.0-rc.1
 
-Version 2.0.2: centralized result determination, explicit winner and termination, export build version, cache bust.
+See README.md, CHANGELOG.md and VALIDATION-v3.md for run instructions,
+the changes in this release candidate, and the checks actually completed.
+
+Publish index.html, sw.js, manifest.webmanifest, icon.svg, engine/ and pieces/
+together. The application is served from the repository root.
+
+Stockfish.js 19 (c) 2026 Chess.com LLC, GPLv3.
+Sources: https://github.com/nmrugg/stockfish.js
+         https://github.com/official-stockfish/Stockfish
+The bundled engine is unchanged. Preserve the license and provide corresponding
+source as required when redistributing it.
