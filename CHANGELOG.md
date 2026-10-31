@@ -1,3 +1,16 @@
+# v3.0.0-rc.4 (prepared locally)
+
+- Added position-based plans and tradeoffs to live coaching, full-move hints and review.
+- Added legal Stockfish continuations, with stale-PV and terminal-position guards.
+- Names whose plan is being discussed and distinguishes teaching suggestions from calculated lines.
+- Includes the rc.3 Academy promotion chooser.
+
+# v3.0.0-rc.3
+
+- Academy promotion challenges now require choosing Queen, Rook, Bishop or Knight.
+- Incorrect choices keep the original position for another attempt; underpromotion feedback explains the knight check.
+- Added Cancel and prevented extra moves after a completed challenge.
+
 # v3.0.0-rc.2
 
 - Undo and Redo navigate one move at a time. Continue game resumes the bot when needed.

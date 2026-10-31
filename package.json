@@ -1,7 +1,7 @@
 {
   "name": "chess-coach-local-tests",
   "private": true,
-  "version": "3.0.0-rc.2",
+  "version": "3.0.0-rc.4",
   "description": "End-to-end local browser tests for Chess Coach",
   "scripts": {
     "test": "node tests/run-tests.cjs",
