@@ -1,3 +1,12 @@
+# v3.0.0-rc.8
+
+- Added remembered Quick / Standard / Extended mistake practice (1, 3 or 5 learner decisions), with recaps tied to the original tactical or positional issue.
+
+- Replaced green brand accents with blue-violet while retaining charcoal surfaces, layout, board themes and semantic move-quality colors.
+- Added remembered Foundations / Developing / Advanced / Expert teaching bands in Settings, with a link from game setup.
+- Tailored live feedback, staged hints and review plans to the selected learner band; advanced bands add recognition/calculation tasks and longer legal engine lines within existing assistance permissions.
+- Added opponent-difficulty practice context without treating the bot’s difficulty as the learner’s rating. Teaching bands are manual, not measured Elo or automatic skill estimates.
+
 # v3.0.0-rc.7
 
 - Added distinct game/Academy sounds, gesture-based audio startup, saved volume/mute preferences and a sound test with visible status.

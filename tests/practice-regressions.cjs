@@ -51,5 +51,15 @@ async function attempt(u){const a=academyState,before=a.states[a.step],m=lessonM
   run(`analyzeWithWorker=queueAnalyzer;const mateBefore=parseAcademyFen('7k/5Q2/6K1/8/8/8/8/8 w - - 0 1'),mateMove=lessonMove(mateBefore,'f7e7');academyPracticeSource={before:mateBefore,m:mateMove,after:make(mateBefore,mateMove),loss:1000,label:'Miss',best:lessonMove(mateBefore,'f7g7')};openLesson('Review your mistake','','');queued=[{...evalFixture('f7g7',10000),mate:1},evalFixture('h8g8'),{...evalFixture(null,-10000),mate:0,terminal:'checkmate'}];`);
   await run(`attempt('f7g7')`);assert.equal(run('academyState.finished'),true);assert.equal(run('academyState.step'),1);assert.match(run('academyState.practiceSummary'),/Checkmate/);
  });
+ await test('quick practice stops after one decision and one legal reply',async()=>{
+  run(`analyzeWithWorker=queueAnalyzer;setPracticeLength(1);startFixture();queued=[evalFixture('e2e4'),evalFixture('e7e5',300),evalFixture('e7e5')];`);
+  await run(`attempt('e2e4')`);assert.equal(run('academyState.finished'),true);assert.equal(run('academyState.step'),2);assert.match(run('academyState.practiceSummary'),/1\/1 decisions.*Review focus:.*h4–e1/);
+ });
+ await test('extended practice keeps its five-decision target when the next-session preference changes',async()=>{
+  run(`setPracticeLength(5);startFixture();setPracticeLength(1);queued=[evalFixture('e2e4'),evalFixture('e7e5',300),evalFixture('e7e5')];`);await run(`attempt('e2e4')`);
+  for(const [u,reply] of [['g1f3','b8c6'],['f1c4','g8f6'],['d2d3','f8c5'],['c2c3','d7d6']]){run(`queued=[evalFixture('${u}'),evalFixture('${reply}')];`);await run(`attempt('${u}')`);}
+  assert.equal(run('academyState.targetMoves'),5);assert.equal(run('academyState.acceptedMoves.length'),5);assert.equal(run('academyState.finished'),true);assert.match(run('academyState.practiceSummary'),/5\/5 decisions/);
+  assert.equal(run('setPracticeLength(99)'),false);assert.equal(run('practiceLength'),1);run('setPracticeLength(3)');
+ });
  console.log(`${count} asynchronous practice regressions passed`);
 })().catch(e=>{console.error(e);process.exitCode=1});
