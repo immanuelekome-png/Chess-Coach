@@ -12,6 +12,10 @@ The material-draw shortcut previously recognized at most two bishops confined to
 - QA-only castling fixture: clicked e1–g1 and observed White’s king on g1 and rook on f1 through the regular game controls.
 - Fixtures change the starting position in an untracked preview copy only. They are excluded from publication. Saved-game behavior for custom starting positions was not tested; regular saves still assume the standard starting position.
 
+## Actual live HTTPS after publication
+
+Applied the waiting update from rc.14 through Load update and observed rc.15. Academy retained the outpost concept’s tomorrow schedule after the update. The controlled bishop-promotion UI test above remains a preview-fixture check rather than a naturally played live game.
+
 ## Rules reference and limits
 
 The generalization follows the dead-position rule in FIDE Laws of Chess, Article 5.2.2; castling and automatic-draw checks refer to Articles 3.8.2 and 9.6: https://handbook.fide.com/chapter/e012023 . No quoted rule text is incorporated into the app.
