@@ -1,3 +1,9 @@
+# v3.0.0-rc.16
+
+- Add two positional reply labs: compare an open-file exchange with seventh-rank entry, and handle a pawn challenge to a knight versus using a quiet reply to develop.
+- Each branch asks for a plan before a board move. Knight/bishop branches accept multiple safe destinations; attacked squares name the actual attacker.
+- Show Black’s legal recapture after the rook exchange so trading does not masquerade as winning material. Both branches are required for completion, and meaningful misses join Revisit concepts.
+
 # v3.0.0-rc.15
 
 - Correct insufficient-material detection when only kings and any number of bishops confined to the same square color remain, including promoted bishops. Previously the multi-bishop case only handled exactly two bishops.
