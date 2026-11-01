@@ -15,6 +15,10 @@ Both example branches are required before completion. Wrong plans keep the board
 - Desktop: opened the rook lab through Plan labs, rejected Ra7 onto a friendly pawn, selected ...Rad8, rejected the claim that it wins a rook and observed 64 disabled squares until a correct plan. Played Rxd8 and observed Black’s recapture on d8 with both sides retaining one rook. Explored ...Rac8 and completed Rd7; credit waited for both branches.
 - 390px frame: selected ...f6, rejected ignoring the pawn attack, attempted Nc6 and saw the unchanged position; played Nd3. Explored ...a6 and developed Bg5, completing both branches. Body client/scroll widths were 375px. After refining feedback, repeated Nc6 and observed the concrete message that Black’s b7 pawn attacks c6.
 
+## Actual live HTTPS after publication
+
+Applied the waiting update from rc.15 through Load update and observed rc.16. Opened the published open-file reply lab through Plan labs and observed its Rad8/Rac8 reply choices. Full branch interaction checks above were performed on the preview build before publication.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected-startup, hardware-audio or true simultaneous-tab check. Current-attack checks are exercise goals, not full tactical evaluations; a safe-looking destination can still require deeper calculation in real games. Example replies are curated and do not enumerate every defense. Long-term learning effectiveness remains unmeasured.

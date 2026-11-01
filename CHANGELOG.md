@@ -1,3 +1,10 @@
+# v3.0.0-rc.17
+
+- Add paste → preview → save PGN import under Saved games, with legal main-line validation before creating a separate saved record. Supports SAN, coordinate moves and older Chess Coach coordinate-arrow exports.
+- Import standard-start games for replay/review, choose your review side, and preserve recorded players/results on complete re-export. Imported results never affect the bot-game record; replayed boards cannot start new moves or bots.
+- Ignore comments/side lines while clearly describing the main-line scope. Reject malformed or ambiguous moves, contradictory results, unsupported variants/custom starts, stale previews and over-limit input. Storage failures leave existing records intact.
+- Keep revisit feedback within the lesson’s responsive tools column.
+
 # v3.0.0-rc.16
 
 - Add two positional reply labs: compare an open-file exchange with seventh-rank entry, and handle a pawn challenge to a knight versus using a quiet reply to develop.
