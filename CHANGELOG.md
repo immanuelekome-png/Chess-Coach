@@ -1,3 +1,10 @@
+# v3.0.0-rc.12
+
+- Retry failed piece images once, then show accessible, readable backup pieces. Settings can retry images; changing themes also rebuilds them.
+- Stage and validate offline downloads before replacing files; reject failed HTTP responses and mismatched HTML builds. Reuse the canonical offline page even with URL queries.
+- Add visible offline readiness, download/repair and update controls. Updates wait for Load update instead of replacing an active game automatically.
+- Add PNG home-screen icons and iPhone installation guidance while preserving charcoal/violet styling.
+
 # v3.0.0-rc.11
 
 - Added remembered Standard / Detailed / Deep review depths (10/12/14), restart and cancel controls, and actual searched-depth reporting. Live coaching and practice remain at depth 10.
