@@ -1,13 +1,14 @@
 {
   "name": "chess-coach-local-tests",
   "private": true,
-  "version": "3.0.0-rc.6",
+  "version": "3.0.0-rc.7",
   "description": "End-to-end local browser tests for Chess Coach",
   "scripts": {
     "test": "node tests/run-tests.cjs",
     "test:core": "node tests/core-regressions.cjs",
     "test:practice": "node tests/practice-regressions.cjs",
-    "test:saves": "node tests/saved-games-regressions.cjs"
+    "test:saves": "node tests/saved-games-regressions.cjs",
+    "test:audio": "node tests/audio-interface-regressions.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
