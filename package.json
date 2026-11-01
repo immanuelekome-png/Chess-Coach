@@ -1,11 +1,12 @@
 {
   "name": "chess-coach-local-tests",
   "private": true,
-  "version": "3.0.0-rc.4",
+  "version": "3.0.0-rc.5",
   "description": "End-to-end local browser tests for Chess Coach",
   "scripts": {
     "test": "node tests/run-tests.cjs",
-    "test:core": "node tests/core-regressions.cjs"
+    "test:core": "node tests/core-regressions.cjs",
+    "test:practice": "node tests/practice-regressions.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
