@@ -1,3 +1,11 @@
+# v3.0.0-rc.9
+
+- Added four interactive Academy plan labs: spot a key square, choose a plan, then play a legal move achieving the goal. Several goals accept multiple moves.
+- Added nine end-of-lesson reasoning checkpoints; new completion credit waits for a correct answer.
+- Put lesson boards and activity panels side by side on desktop, with a stacked phone layout. Removed smooth navigation scrolling after fast-click testing exposed moving targets.
+- Added saved-game names and search by name, opponent, color or difficulty. Names use separate metadata without rewriting game timelines.
+- Added SAN PGN exports with preview/selectable text, correct player colors and results, and exports limited to the saved cursor.
+
 # v3.0.0-rc.8
 
 - Added remembered Quick / Standard / Extended mistake practice (1, 3 or 5 learner decisions), with recaps tied to the original tactical or positional issue.
