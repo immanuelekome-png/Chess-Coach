@@ -1,3 +1,9 @@
+# v3.0.0-rc.14
+
+- Add Academy’s Revisit concepts list for meaningful misses in plan labs, reply labs and explanation checkpoints. Reopen due or upcoming concepts directly.
+- Schedule a finished attempt with a miss for tomorrow; clean subsequent attempts move to 3, 7, 14 and 30 days. Unfinished missed attempts remain ready now, and completion checkmarks remain intact.
+- Keep one miss per activity attempt, ignore selection/illegal-destination taps, preserve newer cross-tab schedules and show storage failures. Schedules stay local to this browser and do not alter teaching level or bot difficulty.
+
 # v3.0.0-rc.13
 
 - Add two Academy reply labs: predict a legal response to a knight fork or protected bishop skewer, then play the follow-up yourself.
