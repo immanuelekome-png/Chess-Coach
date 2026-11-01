@@ -1,6 +1,6 @@
 # Chess Coach
 
-Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.17**. Difficulty labels are approximate, not measured Elo ratings.
+Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.18**. Difficulty labels are approximate, not measured Elo ratings.
 
 Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CHANGELOG.md), [ROADMAP.md](ROADMAP.md) and the release-specific `VALIDATION-v3-rc*.md` records for changes and verification limits.
 
@@ -8,7 +8,7 @@ Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CH
 
 - Play as White or Black against configurable bots, or watch Bot vs Bot with playback controls.
 - Navigate Undo/Redo one half-move at a time. Use independent teaching-level and assistance controls, with optional hidden live coaching/review.
-- Review accuracy estimates and move classifications at selected depth 10, 12 or 14; explore calculated continuations without changing your saved moves. Live hints and mistake practice use depth 10.
+- Review accuracy estimates and move classifications at selected depth 10, 12 or 14; explore calculated continuations without changing your saved moves. Completed reviews can reopen from a depth-specific local cache; Analyze at selected depth always recalculates. Live hints and mistake practice use depth 10.
 - Learn through position-based lessons, plan labs, tactical and positional reply branches, plan choices and explanation checkpoints. Revisit concepts schedules meaningful interactive misses for later practice.
 - Resume browser-local saved games; name/search them and preview/export SAN PGN. Paste a standard-start PGN (including older coordinate-arrow exports) to save a separate game for replay/review. Imported results do not affect your bot-game record. Saves, results and Academy progress do not sync between devices.
 - Select board/piece styles and sound settings. Failed piece images have a readable backup and a retry control.
@@ -21,7 +21,7 @@ On the published HTTPS site, Settings → Offline & app updates shows download r
 
 ## Checks
 
-Run `npm run test:regression` for all **155 unique dependency-free checks** across fourteen isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
+Run `npm run test:regression` for all **169 unique dependency-free checks** across fifteen isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
 
 `npm test` / `RUN-TESTS.cmd` is the older, separate Playwright smoke workflow and requires its dependencies. Recent releases used the supported cloud browser for actual desktop and phone-width interaction; they do not claim physical iPhone Safari, hardware sound or true simultaneous-tab coverage. Dates in the concept schedule are simulated in unit checks, not verified by waiting several days.
 

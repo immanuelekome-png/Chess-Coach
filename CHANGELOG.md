@@ -1,3 +1,10 @@
+# v3.0.0-rc.18
+
+- Reuse completed Stockfish reviews for matching moves, positions, engine and selected depth. Cached scores rebuild current classifications and teaching; earlier cursors can reuse a matching prefix.
+- Analyze at selected depth always starts a fresh run. Saved analysis can be disabled or cleared without deleting games, results or Academy progress.
+- Keep up to five completed reviews within a bounded local cache. Invalid data, failed saves, cancelled runs and mismatched branches/depths cannot substitute a cached review.
+- Allow imported-game review when the live-coaching hide preference is enabled.
+
 # v3.0.0-rc.17
 
 - Add paste → preview → save PGN import under Saved games, with legal main-line validation before creating a separate saved record. Supports SAN, coordinate moves and older Chess Coach coordinate-arrow exports.

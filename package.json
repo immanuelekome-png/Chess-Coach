@@ -1,7 +1,7 @@
 {
   "name": "chess-coach-local-tests",
   "private": true,
-  "version": "3.0.0-rc.17",
+  "version": "3.0.0-rc.18",
   "description": "End-to-end local browser tests for Chess Coach",
   "scripts": {
     "test": "node tests/run-tests.cjs",
@@ -19,7 +19,8 @@
     "test:concepts": "node tests/concept-review-regressions.cjs",
     "test:rules": "node tests/special-rule-regressions.cjs",
     "test:positional": "node tests/positional-reply-regressions.cjs",
-    "test:import": "node tests/pgn-import-regressions.cjs"
+    "test:import": "node tests/pgn-import-regressions.cjs",
+    "test:cache": "node tests/review-cache-regressions.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
