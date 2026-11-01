@@ -5,6 +5,7 @@
   "description": "End-to-end local browser tests for Chess Coach",
   "scripts": {
     "test": "node tests/run-tests.cjs",
+    "test:regression": "node tests/run-regressions.cjs",
     "test:core": "node tests/core-regressions.cjs",
     "test:practice": "node tests/practice-regressions.cjs",
     "test:saves": "node tests/saved-games-regressions.cjs",
