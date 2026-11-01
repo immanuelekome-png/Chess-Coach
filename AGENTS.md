@@ -9,3 +9,5 @@ Design preference: preserve the mostly black/charcoal surfaces and current navig
 Coaching: keep manual learner teaching level, assistance permissions and bot difficulty independent. Teaching bands are not measured Elo; automatic skill estimation is future work. Continue agreed improvements after appropriate checks and publication without routine approval checkpoints.
 
 Academy priority: make lessons interactive with recognition tasks, explain-why choices and playable plans. Four plan labs and nine checkpoints are implemented in rc.9. Continue toward prediction tasks, multiple opponent replies and revisiting missed concepts; do not reduce Academy to static walkthroughs.
+
+Mobile testing is required alongside desktop checks. The user confirmed the apparent header overlap in their screenshot was normal scrolling; do not redesign the navigation based on that image. Piece loading recovered after refresh; the intermittent cause is unconfirmed. Distinguish phone-width Chrome checks from physical iPhone Safari testing.
