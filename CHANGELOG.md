@@ -1,3 +1,7 @@
+# v3.0.0-rc.10
+
+- Keep pieces and squares fully visible while Academy locks the board for a question or engine evaluation. Locked squares remain non-interactive.
+
 # v3.0.0-rc.9
 
 - Added four interactive Academy plan labs: spot a key square, choose a plan, then play a legal move achieving the goal. Several goals accept multiple moves.
