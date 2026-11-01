@@ -1,3 +1,10 @@
+# v3.0.0-rc.6
+
+- Automatically save games on this device and reopen them from setup after refresh.
+- Preserve color, bot setup, board, Undo/Redo cursor and supported draw claims.
+- Reopen finished games for review without counting the result twice.
+- Detect stale save revisions and offer a separate copy. Reject illegal or corrupt saves safely.
+
 # v3.0.0-rc.5
 
 - Personal mistake practice now continues through three learner decisions and Stockfish replies.

@@ -1,12 +1,12 @@
 # Chess Coach remaining work
 
-Implemented through rc.5: genuine Stockfish coaching, corrected lesson positions, review/undo state fixes, one-ply navigation, automatic accuracy summaries, hidden-live-review preference, independent result records, terminal spectator controls explicit Academy promotion choice, a first pass of position-specific plans/tradeoffs with legal engine continuations, and three-decision mistake-practice sessions with Stockfish replies.
+Implemented through rc.6: genuine Stockfish coaching, corrected lesson positions, review/undo state fixes, one-ply navigation, automatic accuracy summaries, hidden-live-review preference, independent result records, terminal spectator controls explicit Academy promotion choice, a first pass of position-specific plans/tradeoffs with legal engine continuations, three-decision mistake-practice sessions with Stockfish replies, and local saved-game recovery/history.
 
 ## Next priorities
 
 1. Expand and audit positional coaching: broaden recognition cues and strategic coverage beyond the implemented rules. Add difficulty/learner adaptation while keeping assistance level independent.
 2. Mistake practice refinements: adjustable session length and more targeted learning summaries beyond the implemented three-decision flow.
-3. Saved-game recovery and history: resume after reload, reopen finished games/reviews, and manage local games safely. Game records and progress currently stay on the device; they do not sync between phone and computer.
+3. Saved-game refinements: names/search/export and optional review caching. Local recovery and reopening are implemented. Saves and progress do not sync between devices.
 4. Review refinements: broader Book repertoire, deeper optional analysis, more validation of special labels, and clearer visual links from move classifications to tactical lines. Accuracy is an app-specific estimate.
 5. Release testing: iPhone Safari/PWA install and updates, offline startup/playback, sound controls, special-rule edge cases and true concurrent-tab human-result scenarios. Desktop browser results do not substitute for these.
 
