@@ -1,3 +1,9 @@
+# v3.0.0-rc.11
+
+- Added remembered Standard / Detailed / Deep review depths (10/12/14), restart and cancel controls, and actual searched-depth reporting. Live coaching and practice remain at depth 10.
+- Added calculated continuation navigation on the review board: preview replies to the played move or the best line, step backward/forward, and tap SAN move buttons.
+- Previews leave actual game moves, history and saves unchanged; illegal/terminal continuations stop safely. Changing moves or cancelling clears the preview.
+
 # v3.0.0-rc.10
 
 - Keep pieces and squares fully visible while Academy locks the board for a question or engine evaluation. Locked squares remain non-interactive.
