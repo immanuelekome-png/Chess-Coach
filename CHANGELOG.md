@@ -1,3 +1,10 @@
+# v3.0.0-rc.7
+
+- Added distinct game/Academy sounds, gesture-based audio startup, saved volume/mute preferences and a sound test with visible status.
+- Reorganized navigation into Play, Academy, Saved games and Settings, with Coach / Moves / Review game panels.
+- Added standard algebraic move notation and separate coaching cards for feedback, plans, tradeoffs and engine lines.
+- Preserved single-move Undo/Redo, accuracy categories and hidden live review; adjusted board sizing for desktop and phone layouts.
+
 # v3.0.0-rc.6
 
 - Automatically save games on this device and reopen them from setup after refresh.
