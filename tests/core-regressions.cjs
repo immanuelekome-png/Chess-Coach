@@ -5,7 +5,7 @@ const elements=new Map();
 function el(){return {value:'classic',checked:true,textContent:'',children:[],dataset:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},querySelectorAll(){return []},replaceChildren(...x){this.children=x},appendChild(x){this.children.push(x)},append(...x){this.children.push(...x)},setAttribute(){}}}
 const document={getElementById(id){if(!elements.has(id))elements.set(id,el());return elements.get(id)},createElement:el,createElementNS:el,querySelectorAll(){return []}};
 const storage=new Map();const localStorage={get length(){return storage.size},key(i){return [...storage.keys()][i]},getItem(k){return storage.get(k)||null},setItem(k,v){storage.set(k,String(v))}};
-const ctx=vm.createContext({document,localStorage,console,setTimeout,clearTimeout});
+const ctx=vm.createContext({document,localStorage,crypto:require("node:crypto").webcrypto,console,setTimeout,clearTimeout});
 const script=html.match(/<script>([\s\S]*?)<\/script>/)[1].split("document.querySelectorAll('[data-mode]')")[0];
 vm.runInContext(script,ctx);
 const run=s=>vm.runInContext(s,ctx);let passed=0;
