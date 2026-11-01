@@ -94,3 +94,4 @@ test('mate teaching does not append a positional plan or an imaginary response',
  if(positionPlan(before,m,b)!==''||validatedLine(b,{best:'e1e2',pv:['e1e2']}).length)throw Error('Post-mate advice');
 }`));
 console.log(`${passed} core/content regression checks passed`);
+module.exports={ctx,run,storage};

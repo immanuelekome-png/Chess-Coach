@@ -1,3 +1,9 @@
+# v3.0.0-rc.5
+
+- Personal mistake practice now continues through three learner decisions and Stockfish replies.
+- Rejects unsound continuations without moving the board; summarizes decisions, attempts and losses.
+- Handles terminal positions, cancellation and retrying an engine reply without recounting a move.
+
 # v3.0.0-rc.4 (prepared locally)
 
 - Added position-based plans and tradeoffs to live coaching, full-move hints and review.
