@@ -15,6 +15,10 @@ Scope: one standard-start game, up to 100,000 characters and 600 half-moves. Mai
 - Desktop: pasted a nine-ply Ruy Lopez with comments, a variation and a recorded 1–0 resignation. Preview showed only the legal main line. Saved and opened as Black; the board flipped and remained unchanged after attempted pawn clicks. Undo reverted castling; Redo restored it. Real Stockfish review completed all nine plies. Re-export showed Alice/Bob and the recorded 1–0 result. Started a new normal game and played e4; the bot began its reply.
 - 390px frame: imported an older coordinate-arrow Fool’s Mate, previewed canonical SAN and saved/opened it as White. Observed Checkmate, refreshed, reopened the persisted import and completed real four-ply review. Invalid Kf6 produced a move-specific error and left Save disabled. Both the import form and game measured 375px client/scroll widths.
 
+## Actual live HTTPS after publication
+
+Applied the waiting update from rc.16 and observed rc.17. Opened Import a PGN in the published Saved games view, pasted e4/c5 with source names, and observed its valid two-ply preview. Full save/replay/review checks above were performed before publication.
+
 ## References and limits
 
 PGN specification reference (main line, SAN, annotations and matching Result markers): https://github.com/echecsjs/pgn/blob/main/SPEC.md . The parser is intentionally a bounded import subset, not a full PGN database/editor implementation. File picking and custom FEN starts remain future work. No physical iPhone Safari, installed-PWA, disconnected-startup or hardware-audio test. Export text was checked; a fresh file-download test was not performed.
