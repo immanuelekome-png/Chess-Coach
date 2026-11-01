@@ -14,6 +14,10 @@ Offline downloads stage all 45 assets and validate both HTML entry points agains
 - Normal 390px frame: all 32 PNGs loaded, played e4, received a bot reply, and Undo paused history with single-ply navigation. Settings was usable; body client and scroll widths both 375px (no horizontal overflow).
 - HTTP preview correctly reported that offline setup is available on the published HTTPS site instead of claiming readiness.
 
+## Actual live HTTPS after publication
+
+Cloud Chrome loaded rc.12 and reported all 45/45 offline files ready with a waiting update. Load update activated the downloaded worker and reloaded rc.12. Settings then reported 45/45 ready without a pending update. Download offline files and Check for updates completed with readiness preserved. This verifies the online download/update path, not disconnected startup.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected browser startup or audible hardware-output test. The browser API does not expose network disabling. Live HTTPS readiness/update/download checks are recorded separately after deployment. Unicode fallback appearance depends on available device fonts. Deeper-review performance on long games and bot Elo calibration remain separate work.

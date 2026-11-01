@@ -1,3 +1,10 @@
+# v3.0.0-rc.13
+
+- Add two Academy reply labs: predict a legal response to a knight fork or protected bishop skewer, then play the follow-up yourself.
+- Each activity requires exploring two different opponent replies before completion. Wrong predictions and legal moves missing the exercise goal preserve the position for another attempt.
+- Protect the bishop with an a4 pawn in the existing Skewers lesson, preventing the king from simply capturing the attacker.
+- Make loading/worker regression fixtures follow the actual build version; record rc.12 live update and download verification.
+
 # v3.0.0-rc.12
 
 - Retry failed piece images once, then show accessible, readable backup pieces. Settings can retry images; changing themes also rebuilds them.
