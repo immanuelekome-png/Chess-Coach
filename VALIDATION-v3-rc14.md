@@ -14,6 +14,10 @@ Each concept has its own local-storage record, validated on reading. Completion 
 - 390px frame: missed an open-file recognition square, answered the plan and played Rd1. Observed Revisit tomorrow. Returned to Academy and refreshed the page: both the tomorrow item and the earlier three-day outpost item persisted. Body client/scroll widths were both 375px.
 - Phone visual layout and reopening upcoming concepts checked through the rendered UI. Calendar intervals beyond the immediate session are simulated in unit fixtures rather than elapsed-day browser tests.
 
+## Actual live HTTPS after publication
+
+Applied the waiting update from rc.13 through Load update and observed rc.14. Opened the published outpost lab, missed a recognition square, completed the plan and Ne5, and observed Revisit tomorrow in both lesson status and Academy’s revisit list.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected-startup or hardware-audio test. The schedule has not been evaluated for learning effectiveness. It currently covers the interactive concepts above, rather than every puzzle or analyzed-game error. Concurrent-tab revision protection is fixture-tested; true simultaneous browser writes remain unverified.

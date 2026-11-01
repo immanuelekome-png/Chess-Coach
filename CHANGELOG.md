@@ -1,3 +1,8 @@
+# v3.0.0-rc.15
+
+- Correct insufficient-material detection when only kings and any number of bishops confined to the same square color remain, including promoted bishops. Previously the multi-bishop case only handled exactly two bishops.
+- Add special-rule regressions for all four castling moves, attacked transit squares, lost castling rights, en passant expiry and discovered checks, all promotion types, repetition keys and draw thresholds.
+
 # v3.0.0-rc.14
 
 - Add Academy’s Revisit concepts list for meaningful misses in plan labs, reply labs and explanation checkpoints. Reopen due or upcoming concepts directly.
