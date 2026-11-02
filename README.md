@@ -1,6 +1,6 @@
 # Chess Coach
 
-Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.29**. Difficulty labels are approximate, not measured Elo ratings.
+Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.30**. Difficulty labels are approximate, not measured Elo ratings.
 
 Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CHANGELOG.md), [ROADMAP.md](ROADMAP.md) and the release-specific `VALIDATION-v3-rc*.md` records for changes and verification limits.
 
@@ -17,11 +17,11 @@ Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CH
 
 Serve this directory over HTTP, for example `python3 -m http.server 8000`, then open `http://localhost:8000`. For GitHub Pages, publish the root directory and keep `engine/` and `pieces/` beside `index.html`. Stockfish requires both `engine/stockfish.js` and `engine/stockfish.wasm`. File URLs restrict worker/WASM loading.
 
-On the published HTTPS site, Settings → Offline & app updates shows download readiness, offers offline-file repair/download and activates waiting updates through Load update. Download while online before relying on offline use. Browsers may remove cached files. On iPhone Safari, use Share → Add to Home Screen to install. Physical iPhone/PWA and disconnected-startup tests remain unverified in the current validation record.
+On the published HTTPS site, Settings → Offline & app updates shows download readiness, offers offline-file repair/download and activates waiting updates through Load update. Download while online before relying on offline use. App status and update details opens an independent diagnostics page comparing the published build, app page served and installed worker; update errors retain the browser’s exact message. This page is intentionally outside the offline cache and requires network access. Browsers may remove cached files. On iPhone Safari, use Share → Add to Home Screen to install. Physical iPhone/PWA and disconnected-startup tests remain unverified in the current validation record.
 
 ## Checks
 
-Run `npm run test:regression` for all **328 unique dependency-free checks** across twenty-seven isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
+Run `npm run test:regression` for all **343 unique dependency-free checks** across twenty-eight isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
 
 `npm test` / `RUN-TESTS.cmd` is the older, separate Playwright smoke workflow and requires its dependencies. Recent releases used the supported cloud browser for actual desktop and phone-width interaction; they do not claim physical iPhone Safari, hardware sound or true simultaneous-tab coverage. Dates in the concept schedule are simulated in unit checks, not verified by waiting several days.
 
