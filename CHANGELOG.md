@@ -1,3 +1,9 @@
+# v3.0.0-rc.22
+
+- Derive captured-piece lists from actual move history, including en passant and captures of promoted pieces. Promotion itself no longer appears as a captured pawn, and captures are not capped by starting-piece counts.
+- Compute the material lead from the current board, independently of the captured list. Undo/Redo updates both from the displayed position.
+- Keep the opponent’s captured row above the board and your row below when playing Black. Imported and spectator games identify capturing colors instead of calling source players bots.
+
 # v3.0.0-rc.21
 
 - Choose a .pgn or .txt file under Saved games → Import a PGN. Files are read locally, previewed through the existing legal-move validator and saved only after an explicit Save action.
