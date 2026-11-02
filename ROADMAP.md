@@ -13,5 +13,5 @@ Implemented through rc.29: genuine Stockfish coaching, corrected lesson position
 ## Longer term
 
 - More interactive Academy: broaden the two tactical and two positional reply labs; expand beyond the implemented two-decision opposition lab to longer positional plans against several legal replies; expand the implemented four-concept mixed recognition practice beyond sixteen board variants; evaluate and expand the implemented concept revisit schedule; expanded endgame labs. Four spot/choose/play labs and nine reasoning checkpoints are implemented.
-- Representative bot strength calibration over enough games; displayed Elo remains approximate. rc.28 fixes collapsed low tiers and inactive styles; its 72-search curated benchmark and shared-pool sampling verify implementation, not rated strength.
+- Representative bot strength calibration over enough games; displayed Elo remains approximate. rc.28 fixes collapsed low tiers and inactive styles; its 72-search curated benchmark, shared-pool sampling and eight color-reversed matches provide implementation/relative evidence, not rated strength. Five paired games ended in higher-setting wins and three were unresolved at the move cap.
 - Learner progress and recurring mistake patterns, and automatic skill estimates beyond the implemented manual teaching bands.

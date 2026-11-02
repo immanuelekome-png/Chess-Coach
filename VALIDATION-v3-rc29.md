@@ -15,3 +15,9 @@ Public rc.28 was opened during this cycle and displayed the correct version. Pla
 ## Limits
 
 Recorded settings are not proof of independent cognition, delivered/used hints, learning improvement or Elo. Earlier feedback and outside assistance are not measured. Pending hints before a reload are not invented afterward; subsequent unknown history is conservative. Metadata is browser-local and omitted from PGN. Physical iPhone Safari, hardware sound and PWA/offline startup remain unverified; longitudinal learning validation requires future data.
+
+## Follow-up engine matches and deployment check
+
+Eight color-reversed Node UCI games completed under the 80-ply cap policy. Higher settings won five; three remained unresolved. All 530 searched moves were legal and had complete candidate sets. Trace data and reproduction code are retained in `validation/paired-bot-matches-rc29.json`, `validation/PAIRED-BOT-MATCHES.md` and `tests/bot-match-benchmark.cjs`. These are actual engine matches, distinct from shared-pool selector sampling, but remain far too small and narrow to establish human Elo.
+
+GitHub Pages workflow for rc.29 completed successfully. The existing cloud-browser session continued serving its cached rc.28 and failed two explicit update checks. Direct navigation to the public sw.js asset returned ERR_BLOCKED_BY_CLIENT; an independent resource fetch could not access that asset. This limits inspection and does not prove the failed update’s cause or an app defect. The existing app and saved game stayed usable. Therefore, rc.29 publication is confirmed by the successful deployment workflow, while this cloud session’s public update/load path is not counted as a pass. Preview context checks remain valid; physical Safari remains unverified.
