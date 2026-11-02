@@ -1,3 +1,10 @@
+# v3.0.0-rc.30
+
+- Add an independent App status page showing the published build, app page served, installed offline worker, downloaded file count and waiting update.
+- Retain exact browser update exceptions in Settings and a selectable diagnostic report. Keep status checks independent so a failed network check does not hide worker information.
+- Offer explicit update checks and waiting-worker activation without clearing games or silently reloading play. Keep the status page and published build marker outside the offline cache so an old app shell cannot trap them.
+- Validate release-marker consistency and stale, denied, missing, incomplete and failed update states with fifteen additional regression checks.
+
 # v3.0.0-rc.29
 
 - Record bounded assistance context on new human moves: selected level, hidden live review, interruptions, manual teaching band and hint requests for the current position.
