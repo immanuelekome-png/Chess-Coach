@@ -1,3 +1,9 @@
+# v3.0.0-rc.27
+
+- Add bishop-diagonal coaching that names the actual friendly pawn blockers and compares a safe pawn break with finding another bishop route.
+- Give Foundations learners one focused blocker-recognition task before generic development advice, for either color.
+- Discuss retaining the bishop pair only when bishops cover both square colors, with explicit caveats about blocked lines, threats and king safety. Same-color promoted bishops do not trigger the observation.
+
 # v3.0.0-rc.26
 
 - Make per-game human results immutable. Later finishes cannot change an already recorded win/loss/draw or add another count for the same game.
