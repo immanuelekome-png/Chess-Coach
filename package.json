@@ -26,7 +26,8 @@
     "test:files": "node tests/pgn-file-regressions.cjs",
     "test:captures": "node tests/capture-history-regressions.cjs",
     "test:bots": "node tests/bot-strength-regressions.cjs && node tests/bot-queue-regressions.cjs",
-    "bench:bots": "node tests/bot-strength-benchmark.cjs"
+    "bench:bots": "node tests/bot-strength-benchmark.cjs",
+    "bench:matches": "node tests/bot-match-benchmark.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
