@@ -17,6 +17,10 @@ Review latest example verifies the source line, replays an earlier cursor if nee
 - Undid the native saved game to the beginning, enabled hidden live coaching, and reopened its tracked example. The saved cursor replayed to three plies, cached review selected g4, and fuller counts stayed intact. Client/scroll widths were 375px.
 - Cleared the pattern summary and confirmed two saved games and unchanged displayed result totals. Reopening/reviewing the native game rebuilt its summary.
 
+## Actual live HTTPS after publication
+
+Applied the waiting update from rc.18 and observed rc.19. Reused analysis of the existing imported four-ply checkmate, opened Academy and enabled imports. The published summary showed two flagged moves in one reviewed game.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected-startup, hardware-audio or true simultaneous-tab check. Summaries reflect only reviewed games, chosen sides and finite search depths; this is not a causal diagnosis or longitudinal learning evaluation. No automatic Elo/adaptive learner rating is inferred. Source games removed outside the app cannot be reopened; the UI reports this without replacing the active game.
