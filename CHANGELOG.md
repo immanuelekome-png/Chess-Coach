@@ -1,3 +1,12 @@
+# v3.0.0-rc.34
+
+- Add named, device-local analysis lines accessible from Try moves and Saved games. Preserve the starting FEN, full variation, cursor, orientation and manual marks on the selected position.
+- Save edited branches as separate copies so reopening and experimenting cannot overwrite an existing line. Keep analysis records separate from games, results and Academy progress.
+- Make removal reversible through Removed lines and Restore. Bound record shape/move/mark sizes, check a 30-active-line limit and keep the current board available on storage errors.
+- Validate full legal replay when opening a line; list metadata without replaying every stored move. Refresh library lists across tabs without replacing current analysis.
+- Recalculate engine output and preserve independent/hidden-review restrictions while allowing saved-line analysis when no live native game is active.
+- Add fourteen saved-line regressions and share board UI fixtures with the existing gesture suite.
+
 # v3.0.0-rc.33
 
 - Remove repeated setup/category descriptions and the long review disclaimer from the play surface. Keep global Stockfish readiness/errors, save failures and essential game status; move background information into Settings disclosures.

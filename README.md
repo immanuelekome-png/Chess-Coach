@@ -1,6 +1,6 @@
 # Chess Coach
 
-Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.33**. Difficulty labels are approximate, not measured Elo ratings.
+Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.34**. Difficulty labels are approximate, not measured Elo ratings.
 
 Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CHANGELOG.md), [ROADMAP.md](ROADMAP.md) and the release-specific `VALIDATION-v3-rc*.md` records for changes and verification limits.
 
@@ -21,7 +21,7 @@ On the published HTTPS site, Settings → Offline & app updates shows download r
 
 ## Checks
 
-Run `npm run test:regression` for all **371 unique dependency-free checks** across twenty-nine isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
+Run `npm run test:regression` for all **385 unique dependency-free checks** across thirty isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
 
 `npm test` / `RUN-TESTS.cmd` is the older, separate Playwright smoke workflow and requires its dependencies. Recent releases used the supported cloud browser for actual desktop and phone-width interaction; they do not claim physical iPhone Safari, hardware sound or true simultaneous-tab coverage. Dates in the concept schedule are simulated in unit checks, not verified by waiting several days.
 
@@ -72,4 +72,6 @@ Board tools is a collapsed panel under the playing board and in review. Right-dr
 
 X flips the current board, Z toggles focus mode during play, Left/Right navigate moves and Up/Down jump to first/last. Shortcuts ignore text fields, selectors, Settings and export dialogs. Gesture/shortcut help stays inside Board tools.
 
-Try moves opens a separate board from play or the current review position. Play either side, navigate, branch by returning to an earlier move, reset the line, choose promotions and explicitly analyze with Stockfish. Suggestion arrows can be hidden. Engine analysis remains off during independent or hidden-live-review play; live analysis requests are recorded as assistance. Trial moves never alter the actual game, saves, result record or review. Trial lines are temporary and discarded when closed.
+Try moves opens a separate board from play or the current review position. Play either side, navigate, branch by returning to an earlier move, reset the line, choose promotions and explicitly analyze with Stockfish. Suggestion arrows can be hidden. Engine analysis remains off during independent or hidden-live-review play; live analysis requests are recorded as assistance. Trial moves never alter the actual game, saves, result record or review. Unsaved trial work is discarded when closed. Saved analysis lines can retain the full line, selected position and that position’s manual arrows/highlights.
+
+In Try moves → Saved analysis lines, enter a name and choose Save line. Reopened or previously saved work uses Save a copy, preserving the original. Saved games → Saved analysis lines opens the same library. Remove moves a line to Removed lines, where Restore brings it back. New saves/restores check a 30-active-line limit; each line supports up to 600 half-moves. Records stay on this device. Their starting FEN preserves turn, counters, castling and en passant; earlier repetition history is not inferred. Engine results are recalculated rather than saved.
