@@ -1,0 +1,15 @@
+# Chess Coach rc.33 validation
+
+## Automated
+
+All 371 unique dependency-free checks across 29 isolated suites passed. Nineteen new board tools checks exercise all-square/corner hit testing in either orientation, one-move pointer taps, lifted drag ghosts and no replay animation on drop, Black grid ordering, illegal/own-piece/offboard drops, pointer cancellation/secondary fingers/stale positions, explicit underpromotion, upright animation geometry, modifier colors and toggles, right-click drawing, mobile-style two-tap modes, annotation invalidation, mouse/keyboard click distinction, variation branching/save isolation, terminal/reset/promotion behavior, independent/hidden-review engine restrictions, history shortcuts/form guards, assistance recording and stale analysis replies.
+
+## Actual browser interaction
+
+Desktop Chrome preview: dragged e2-e4 and received a legal bot reply. Played Black and dragged e7-e5 on the reversed board; DOM square transforms were none. Created an Alt-right-click blue square and a two-tap e2-e4 arrow without making a move. X flipped geometry and retained the mark; Z entered and exited focus mode. Opened Try moves, received real Stockfish depth-10 evaluation with a suggestion arrow, played both sides, navigated back and branched from ...e5 to ...c5. Closing retained the actual board/move list. Independent mode displayed a disabled engine control. A completed depth-10 two-ply game review accepted a Shift-right-click green square. Try moves from the selected review position opened with Black on move, accepted ...e5, then returned to the unchanged e7 pawn on the review board. The review entry was selected independently of the current live-game position.
+
+375px Chrome iframe: started Black play, dragged e7-e5 from actual displayed square centers and received a legal White reply. Created a g8-f6 arrow by tapping endpoints and a blue d5 square, without playing them. Opened Try moves, played ...Nf6, explicitly obtained a real depth-10 evaluation and suggestion arrow, then closed with the original g8 knight intact. Main document client/scroll widths matched at 360px; the trial dialog matched at 320px. A 1.2-second mouse hold on a piece did not move it; computed board user-select and transform were none. The final dialog layout fits the phone viewport with scrolling available for controls.
+
+## Scope and limits
+
+Reference gestures follow Chess.com’s dedicated arrow/highlight help and game keyboard-shortcut documentation; its web/mobile limitations are not copied into this app’s explicit phone drawing controls. Right-drag behavior is covered by pointer fixtures; actual browser checks included right-click modifiers and explicit endpoint taps, not a physical right-button drag. Chrome phone width/mouse-pointer interactions do not certify physical iPhone Safari touch/callout behavior, hardware sound or disconnected PWA startup. Trial lines/marks are temporary, not persisted variation trees or PGN annotations. Bot targets and review scores remain estimates. No new third-party code/assets were introduced.

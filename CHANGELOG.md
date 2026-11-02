@@ -1,3 +1,12 @@
+# v3.0.0-rc.33
+
+- Remove repeated setup/category descriptions and the long review disclaimer from the play surface. Keep global Stockfish readiness/errors, save failures and essential game status; move background information into Settings disclosures.
+- Add pointer-based piece dragging while preserving tapping and keyboard input. Suppress native board selection/image dragging, handle invalid/outside/cancelled drops and keep the promotion chooser.
+- Replace rotated boards with reversed grid placement for Black play and mixed Academy positions. Use the same square map for animations, dragging and arrows; pieces stay upright throughout.
+- Add structured Board tools in play/review: colored arrows, square highlights, flip, clear and collapsed gesture/shortcut help. Provide two-tap arrow and square modes for phones, plus familiar right-click/modifier gestures and X/Z/history shortcuts.
+- Add an isolated Try moves board from play or review with legal moves for both sides, branching navigation, promotion, reset, explicit depth-10 engine analysis and an optional suggestion arrow. Preserve the live game/saves and existing assistance permissions; record live analysis requests as assistance.
+- Add nineteen focused board/variation regressions covering geometry, input cancellation, promotion, marks, keyboard navigation, isolation and stale engine replies.
+
 # v3.0.0-rc.32
 
 - Add a separate opposition-and-reassessment Academy activity: three learner moves on each of two legal reply routes, with reasoning checkpoints after each changed position.
