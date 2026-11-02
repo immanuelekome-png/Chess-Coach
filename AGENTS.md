@@ -13,3 +13,5 @@ Academy priority: make lessons interactive with recognition tasks, explain-why c
 Mobile testing is required alongside desktop checks. The user confirmed the apparent header overlap in their screenshot was normal scrolling; do not redesign the navigation based on that image. Piece loading recovered after refresh; the intermittent cause is unconfirmed. Distinguish phone-width Chrome checks from physical iPhone Safari testing.
 
 Custom-start PGN imports shipped in rc.24: source FEN lives in importedSource.startFen, decodeSavedGame validates it before replay, reviewOpeningPrefix excludes nonstandard starts from Book labels, and pattern summaries retain startFen for turn/numbering/source identity. Preserve old standard-start saves. FEN does not supply earlier captures or repetition history; do not infer them.
+
+Mixed plan practice shipped in rc.25: four shuffled concept families, sixteen White/Black variants, spot/plan/play input, underlying-concept revisit integration and up to 30 independently keyed session records. Guided results count recorded misses and do not measure skill; do not automatically complete source lessons from a mixed exercise.

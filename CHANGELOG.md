@@ -1,3 +1,10 @@
+# v3.0.0-rc.25
+
+- Add shuffled four-position mixed plan practice with sixteen White/Black variants across development, supported knight posts, open files and king activity. Every task requires spotting, explaining and playing.
+- Keep Black’s board orientation stable after the learner move. Generalize plan goals to either side and to the displayed supported square.
+- Feed mistakes into the underlying concept’s revisit schedule; track completed sessions separately from individual lesson checkmarks. Store up to 30 sessions under independent keys, with clear retry and storage-failure feedback.
+- Fix mirrored answer wording for lowercase color names found during phone-width interaction. Guided results are explicitly not skill ratings.
+
 # v3.0.0-rc.24
 
 - Import custom-start standard-chess PGNs with SetUp/FEN headers. Validate the supplied position and replay every move legally before enabling Save.
