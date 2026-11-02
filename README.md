@@ -1,6 +1,6 @@
 # Chess Coach
 
-Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.25**. Difficulty labels are approximate, not measured Elo ratings.
+Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.26**. Difficulty labels are approximate, not measured Elo ratings.
 
 Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CHANGELOG.md), [ROADMAP.md](ROADMAP.md) and the release-specific `VALIDATION-v3-rc*.md` records for changes and verification limits.
 
@@ -21,7 +21,7 @@ On the published HTTPS site, Settings → Offline & app updates shows download r
 
 ## Checks
 
-Run `npm run test:regression` for all **268 unique dependency-free checks** across twenty-two isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
+Run `npm run test:regression` for all **280 unique dependency-free checks** across twenty-three isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
 
 `npm test` / `RUN-TESTS.cmd` is the older, separate Playwright smoke workflow and requires its dependencies. Recent releases used the supported cloud browser for actual desktop and phone-width interaction; they do not claim physical iPhone Safari, hardware sound or true simultaneous-tab coverage. Dates in the concept schedule are simulated in unit checks, not verified by waiting several days.
 
@@ -47,3 +47,5 @@ Saved games → Import a PGN accepts standard chess games with `[SetUp "1"]` and
 FEN validation checks board shape, kings, pawn ranks/counts, minimum promotion budget, nonmoving-king safety and consistency of castling/en passant fields. It does not prove the complete historical reachability of an arbitrary position. Chess960 and other variants remain unsupported. Earlier captures and repetition history cannot be recovered from FEN; captured lists show only captures in the imported moves. Custom-start reviews do not use the standard-start opening repertoire unless the full starting FEN actually matches the normal initial position.
 
 Academy → Challenges → **Mixed practice: recognize a plan** shuffles four concept families and chooses among sixteen White/Black board variants. Each task requires spotting, explaining and playing. Completed sessions keep recorded misses and guided-practice results on this device (up to 30 sessions); they do not measure Elo or independent mastery. Missed concepts use the same revisit schedule as their normal lessons. A session does not mark an individual source lesson complete.
+
+Human game results are verified against the saved terminal position and revision, then recorded once per game. Browsers with Web Locks serialize result commits. A stale tab keeps its board/review and can save a separate copy; its finish cannot overwrite the existing outcome or add another count for that game.
