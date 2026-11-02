@@ -1,3 +1,9 @@
+# v3.0.0-rc.31
+
+- Preserve the exact browser exception when offline registration fails, with a useful retry instruction.
+- Make Check for updates retry initial setup when no worker was registered. Disable file downloads until setup succeeds, and guard concurrent initialization attempts.
+- Keep the game position intact on setup failure; restore download controls after a successful retry.
+
 # v3.0.0-rc.30
 
 - Add an independent App status page showing the published build, app page served, installed offline worker, downloaded file count and waiting update.

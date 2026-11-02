@@ -23,3 +23,5 @@ Bot play: rc.28 uses completed same-depth MultiPV candidate scores and per-tier 
 Assistance context: rc.29 stores optional per-ply support metadata only on human native moves. Old/imported context is unknown; do not infer independence from current controls or equate a hint request with delivered/used help. Unknown history after reopen/navigation stays conservative. Raw engine caches do not own assistance metadata, and PGN exports omit it. This is descriptive provenance, not an automatic skill estimate.
 
 Update diagnostics: rc.30 adds network-only status.html/build.json outside SW ASSETS. Keep index APP_VERSION, sw BUILD_VERSION/cache, package version and build.json synchronized. Do not cache the independent status route or clear saved data to repair updates. Exact browser errors are evidence; a successful server asset audit does not prove browser update or disconnected startup.
+
+Offline setup: rc.31 exposes exact registration failures and retries initial registration through Check for updates. Keep downloads disabled until a registration exists; guard duplicate initialization. Do not call a no-registration update click a successful check.
