@@ -50,7 +50,7 @@ test('miss identifies throwing away a forced mate',()=>run(`{
 }`));
 test('stale spectator tabs cannot overwrite human results and replay is idempotent',()=>{
  storage.clear();storage.set('cc-stats',JSON.stringify({wins:0,losses:3,draws:0}));
- run(`game=initial();for(const u of ['f2f3','e7e5','g2g4','d8h4'])game=make(game,lessonMove(game,u));currentGameId='new-game';playerSide='w';watchMode=false;saveGameResult();saveGameResult();`);
+ run(`game=initial();history=[];gameStates=[];redoStates=[];for(const u of ['f2f3','e7e5','g2g4','d8h4']){const before=game,m=lessonMove(game,u);history.push(before);game=make(before,m);gameStates.push({before,m,after:game});}settings={name:'Test bot',elo:1000,style:'Balanced'};currentGameId='new-game';lastSavedRevision=null;lastSavedSignature=null;saveConflict=false;playerSide='w';watchMode=false;saveGameResult();saveGameResult();`);
  assert.equal(run('loadStats().losses'),4);run(`watchMode=true;stats={wins:0,losses:1,draws:0};saveGameResult()`);assert.equal(run('loadStats().losses'),4);
  storage.set('cc-result:another-tab','wins');assert.equal(run('loadStats().wins'),1);
 });

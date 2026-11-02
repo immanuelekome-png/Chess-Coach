@@ -1,3 +1,10 @@
+# v3.0.0-rc.26
+
+- Make per-game human results immutable. Later finishes cannot change an already recorded win/loss/draw or add another count for the same game.
+- Require a terminal, legally replayable saved game with matching revision, position and player side before recording its outcome. Keep imports and spectator games excluded.
+- Serialize result commits with Web Locks where available, capture game identity before waiting, and recheck the saved revision inside the commit.
+- Keep stale, blocked-storage and lock-failure feedback separate from ordinary save status, beside the copy control. Board and review remain available when a result cannot be verified.
+
 # v3.0.0-rc.25
 
 - Add shuffled four-position mixed plan practice with sixteen White/Black variants across development, supported knight posts, open files and king activity. Every task requires spotting, explaining and playing.
