@@ -1,0 +1,1349 @@
+{
+  "version": "3.0.0-rc.28",
+  "engine": "bundled Stockfish.js 19 Lite, Node UCI entry point",
+  "positions": 12,
+  "ratings": [
+    400,
+    700,
+    1000,
+    1500,
+    2100,
+    2200
+  ],
+  "searchCount": 72,
+  "legalChoices": 72,
+  "fallbacks": 0,
+  "finiteMeans": [
+    {
+      "rating": 400,
+      "meanLoss": 20.535272727272726,
+      "positions": 11
+    },
+    {
+      "rating": 700,
+      "meanLoss": 14.911636363636363,
+      "positions": 11
+    },
+    {
+      "rating": 1000,
+      "meanLoss": 8.905818181818182,
+      "positions": 11
+    },
+    {
+      "rating": 1500,
+      "meanLoss": 0.9436363636363637,
+      "positions": 11
+    },
+    {
+      "rating": 2100,
+      "meanLoss": 0,
+      "positions": 11
+    },
+    {
+      "rating": 2200,
+      "meanLoss": 0,
+      "positions": 11
+    }
+  ],
+  "samePool": [
+    {
+      "position": "Starting position",
+      "rating": 400,
+      "meanFiniteLoss": 21.612,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Starting position",
+      "rating": 700,
+      "meanFiniteLoss": 15.756,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Starting position",
+      "rating": 1000,
+      "meanFiniteLoss": 9.624,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Starting position",
+      "rating": 1500,
+      "meanFiniteLoss": 1.372,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Starting position",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Starting position",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 400,
+      "meanFiniteLoss": 21.544,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 700,
+      "meanFiniteLoss": 15.836,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 1000,
+      "meanFiniteLoss": 9.48,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 1500,
+      "meanFiniteLoss": 1.22,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "After e4",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 400,
+      "meanFiniteLoss": 32.156,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 700,
+      "meanFiniteLoss": 23.564,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 1000,
+      "meanFiniteLoss": 14.484,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 1500,
+      "meanFiniteLoss": 1.172,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Italian development",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 400,
+      "meanFiniteLoss": 17.892,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 700,
+      "meanFiniteLoss": 12.92,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 1000,
+      "meanFiniteLoss": 7.764,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 1500,
+      "meanFiniteLoss": 1.184,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 400,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 700,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 1000,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 1500,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 2100,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Mating opportunity",
+      "rating": 2200,
+      "meanFiniteLoss": null,
+      "mateSamplesKept": 250
+    },
+    {
+      "position": "Knight fork",
+      "rating": 400,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Knight fork",
+      "rating": 700,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Knight fork",
+      "rating": 1000,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Knight fork",
+      "rating": 1500,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Knight fork",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Knight fork",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 400,
+      "meanFiniteLoss": 33.468,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 700,
+      "meanFiniteLoss": 24.056,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 1000,
+      "meanFiniteLoss": 14.3,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 1500,
+      "meanFiniteLoss": 1.164,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 400,
+      "meanFiniteLoss": 21.092,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 700,
+      "meanFiniteLoss": 16.096,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 1000,
+      "meanFiniteLoss": 10.176,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 1500,
+      "meanFiniteLoss": 1.984,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "En passant available",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 400,
+      "meanFiniteLoss": 27.232,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 700,
+      "meanFiniteLoss": 18.176,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 1000,
+      "meanFiniteLoss": 10.396,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 1500,
+      "meanFiniteLoss": 0.628,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Castling available",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 400,
+      "meanFiniteLoss": 45.984,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 700,
+      "meanFiniteLoss": 34.156,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 1000,
+      "meanFiniteLoss": 19.616,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 1500,
+      "meanFiniteLoss": 1.096,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Rook and pawn ending",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 400,
+      "meanFiniteLoss": 0.732,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 700,
+      "meanFiniteLoss": 0.516,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 1000,
+      "meanFiniteLoss": 0.36,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 1500,
+      "meanFiniteLoss": 0.092,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Opposition",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 400,
+      "meanFiniteLoss": 4.176,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 700,
+      "meanFiniteLoss": 2.952,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 1000,
+      "meanFiniteLoss": 1.764,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 1500,
+      "meanFiniteLoss": 0.468,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 2100,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    },
+    {
+      "position": "Promotion",
+      "rating": 2200,
+      "meanFiniteLoss": 0,
+      "mateSamplesKept": 0
+    }
+  ],
+  "observations": [
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 25,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 62,
+      "rawBest": "g1f3",
+      "chosen": "e2e4",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 61,
+      "rawBest": "e2e4",
+      "chosen": "e2e4",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 161,
+      "rawBest": "e2e4",
+      "chosen": "e2e4",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 229,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Starting position",
+      "category": "opening",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 495,
+      "rawBest": "e2e4",
+      "chosen": "e2e4",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 17,
+      "rawBest": "c7c5",
+      "chosen": "c7c5",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 40,
+      "rawBest": "c7c5",
+      "chosen": "d7d5",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 109,
+      "rawBest": "d7d5",
+      "chosen": "g7g6",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 188,
+      "rawBest": "e7e5",
+      "chosen": "e7e5",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 564,
+      "rawBest": "e7e5",
+      "chosen": "e7e5",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "After e4",
+      "category": "opening",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 871,
+      "rawBest": "e7e5",
+      "chosen": "e7e5",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 29,
+      "rawBest": "d2d4",
+      "chosen": "a2a3",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 56,
+      "rawBest": "d2d4",
+      "chosen": "f1d3",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 66,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 254,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 316,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Italian development",
+      "category": "development",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 908,
+      "rawBest": "f1b5",
+      "chosen": "f1b5",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 51,
+      "rawBest": "g8f6",
+      "chosen": "d8f6",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 52,
+      "rawBest": "g8f6",
+      "chosen": "g8f6",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 63,
+      "rawBest": "g8f6",
+      "chosen": "g8f6",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 245,
+      "rawBest": "a7a6",
+      "chosen": "a7a6",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 286,
+      "rawBest": "g8f6",
+      "chosen": "g8f6",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Ruy Lopez reply",
+      "category": "development",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 853,
+      "rawBest": "g8f6",
+      "chosen": "g8f6",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 18,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 16,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 23,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 50,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 105,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Mating opportunity",
+      "category": "mate",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 560,
+      "rawBest": "d8h4",
+      "chosen": "d8h4",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 12,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 15,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 17,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 25,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 59,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Knight fork",
+      "category": "tactic",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 150,
+      "rawBest": "d4c2",
+      "chosen": "d4c2",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 40,
+      "rawBest": "d5d8",
+      "chosen": "d5d8",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 62,
+      "rawBest": "d5d8",
+      "chosen": "d5e6",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 69,
+      "rawBest": "d5d8",
+      "chosen": "d5d6",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 154,
+      "rawBest": "d5d8",
+      "chosen": "d5d8",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 233,
+      "rawBest": "d5d6",
+      "chosen": "d5d6",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Attacked Scandinavian queen",
+      "category": "tactic",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 1232,
+      "rawBest": "d5d6",
+      "chosen": "d5d6",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 57,
+      "rawBest": "d2d4",
+      "chosen": "f1e2",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 50,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 89,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 160,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 211,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "En passant available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 1011,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 52,
+      "rawBest": "f3g5",
+      "chosen": "f3g5",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 76,
+      "rawBest": "f3g5",
+      "chosen": "f3g5",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 136,
+      "rawBest": "f3g5",
+      "chosen": "f3g5",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 277,
+      "rawBest": "f3g5",
+      "chosen": "f3g5",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 734,
+      "rawBest": "d2d3",
+      "chosen": "d2d3",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Castling available",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 1214,
+      "rawBest": "d2d4",
+      "chosen": "d2d4",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 22,
+      "rawBest": "a2e2",
+      "chosen": "a2a1",
+      "completeDepth": 7,
+      "completeWidth": 12,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 19,
+      "rawBest": "a2d2",
+      "chosen": "a2d2",
+      "completeDepth": 8,
+      "completeWidth": 10,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 59,
+      "rawBest": "a2d2",
+      "chosen": "a2d2",
+      "completeDepth": 9,
+      "completeWidth": 8,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 90,
+      "rawBest": "a2d2",
+      "chosen": "a2d2",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 425,
+      "rawBest": "f2g3",
+      "chosen": "f2g3",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Rook and pawn ending",
+      "category": "endgame",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 877,
+      "rawBest": "a2d2",
+      "chosen": "a2d2",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 400,
+      "elapsedMs": 147,
+      "rawBest": "e6e7",
+      "chosen": "e6e7",
+      "completeDepth": 7,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 700,
+      "elapsedMs": 6,
+      "rawBest": "e6d6",
+      "chosen": "e6f7",
+      "completeDepth": 8,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 1000,
+      "elapsedMs": 29,
+      "rawBest": "e6f7",
+      "chosen": "e6f7",
+      "completeDepth": 9,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 1500,
+      "elapsedMs": 205,
+      "rawBest": "e6f6",
+      "chosen": "e6f6",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 2100,
+      "elapsedMs": 716,
+      "rawBest": "e6d6",
+      "chosen": "e6d6",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Opposition",
+      "category": "endgame",
+      "side": "b",
+      "rating": 2200,
+      "elapsedMs": 249,
+      "rawBest": "e6d6",
+      "chosen": "e6d6",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 400,
+      "elapsedMs": 10,
+      "rawBest": "h1h2",
+      "chosen": "h1g2",
+      "completeDepth": 7,
+      "completeWidth": 7,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 700,
+      "elapsedMs": 10,
+      "rawBest": "h1g2",
+      "chosen": "h1g2",
+      "completeDepth": 8,
+      "completeWidth": 7,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1000,
+      "elapsedMs": 12,
+      "rawBest": "h1g2",
+      "chosen": "h1g2",
+      "completeDepth": 9,
+      "completeWidth": 7,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 1500,
+      "elapsedMs": 20,
+      "rawBest": "a7a8q",
+      "chosen": "a7a8q",
+      "completeDepth": 11,
+      "completeWidth": 5,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2100,
+      "elapsedMs": 252,
+      "rawBest": "h1g2",
+      "chosen": "h1g2",
+      "completeDepth": 13,
+      "completeWidth": 3,
+      "fallback": false
+    },
+    {
+      "position": "Promotion",
+      "category": "special rule",
+      "side": "w",
+      "rating": 2200,
+      "elapsedMs": 722,
+      "rawBest": "a7a8q",
+      "chosen": "a7a8q",
+      "completeDepth": 15,
+      "completeWidth": 3,
+      "fallback": false
+    }
+  ],
+  "limits": "Twelve curated positions and shared-pool sampling verify implementation and candidate budgets. These are not rated matches, a device-speed benchmark, or calibrated Elo; strength against humans remains unmeasured."
+}

@@ -1,3 +1,10 @@
+# v3.0.0-rc.28
+
+- Fix novice/intermediate difficulty settings collapsing to the same minimum Stockfish UCI Elo, and styles being ignored in the active engine path.
+- Select legal moves from full-strength scored MultiPV candidates using tier-specific search limits, score-loss bands and probabilities. Only complete, unique, same-depth candidate sets are compared; early searches can use the engine bestmove.
+- Activate bounded Aggressive, Defensive, Positional, Tactical and Endgame preferences and personality mappings inside each tier’s score band. Strongest tiers retain the best evaluated score; mate outcomes are kept distinct from finite evaluations.
+- Remove unreachable experimental move selection and correct the stale engine README. Add a repeatable bundled-engine benchmark without installing dependencies.
+
 # v3.0.0-rc.27
 
 - Add bishop-diagonal coaching that names the actual friendly pawn blockers and compares a safe pawn break with finding another bishop route.
