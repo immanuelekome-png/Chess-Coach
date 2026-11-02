@@ -25,3 +25,5 @@ Assistance context: rc.29 stores optional per-ply support metadata only on human
 Update diagnostics: rc.30 adds network-only status.html/build.json outside SW ASSETS. Keep index APP_VERSION, sw BUILD_VERSION/cache, package version and build.json synchronized. Do not cache the independent status route or clear saved data to repair updates. Exact browser errors are evidence; a successful server asset audit does not prove browser update or disconnected startup.
 
 Offline setup: rc.31 exposes exact registration failures and retries initial registration through Check for updates. Keep downloads disabled until a registration exists; guard duplicate initialization. Do not call a no-registration update click a successful check.
+
+Academy rc.32: a separate opposition-and-reassessment lab has three learner decisions in each of two routes, with per-decision questions after changed positions. Preserve the original two-decision lesson and progress key. Current-question guards prevent old answers unlocking later decisions; board input stays locked until the current plan is correct. Guided completion/opposition is not evidence of a forced win or learner mastery.

@@ -1,3 +1,10 @@
+# v3.0.0-rc.32
+
+- Add a separate opposition-and-reassessment Academy activity: three learner moves on each of two legal reply routes, with reasoning checkpoints after each changed position.
+- Lock board input until each current question is answered correctly; reject stale answers from earlier decisions. Misses enter the existing concept revisit schedule.
+- Require both routes before completion, distinguish opposition from a guaranteed win and preserve the shorter lesson’s content/progress identity.
+- Add six endgame regressions and exercise both branch orders in existing positional checks.
+
 # v3.0.0-rc.31
 
 - Preserve the exact browser exception when offline registration fails, with a useful retry instruction.
