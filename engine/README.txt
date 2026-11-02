@@ -1,7 +1,7 @@
-To activate a real offline UCI engine, install a browser Worker-compatible Stockfish build here.
-Required: stockfish.js and its matching .wasm / NNUE files, as required by that exact build.
-Do not rename files referenced by the engine JavaScript.
-Chess Coach detects the worker via UCI handshake. If unavailable, it explicitly uses the experimental fallback.
-No engine binary is included in this release.
+Chess Coach bundles Stockfish.js 19 Lite and its matching stockfish.wasm.
+The bundled JavaScript supports a browser Worker and a Node UCI command-line entry point.
+Bot play uses full-strength MultiPV candidate scores from a completed iteration, then applies app-specific difficulty limits and small style preferences. Target strength labels are approximate, not calibrated Elo. Review uses a separate full-strength analysis worker.
+If the engine is unavailable, play pauses with a recovery message; no heuristic fallback move or review score is substituted.
 Stockfish source and licensing: https://github.com/official-stockfish/Stockfish
-Note: some Stockfish JS distributions export a factory instead of a self-starting Worker. Use a Worker-compatible distribution.
+Stockfish.js source and licensing: https://github.com/nmrugg/stockfish.js
+See repository licensing/notices for the bundled build.
