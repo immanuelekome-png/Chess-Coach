@@ -1,3 +1,9 @@
+# v3.0.0-rc.21
+
+- Choose a .pgn or .txt file under Saved games → Import a PGN. Files are read locally, previewed through the existing legal-move validator and saved only after an explicit Save action.
+- Bound file/text size, report read/format errors, and preserve existing text when a file cannot load. An old asynchronous read cannot overwrite a newer file or manual edit; changing review side during loading uses the latest side.
+- Keep the file input within phone-width layouts and allow reselecting the same file.
+
 # v3.0.0-rc.20
 
 - Add board-specific teaching for supported knight posts and current/future pawn challenges, doubled pawns, and rooks supporting passed pawns from behind on a clear file.
