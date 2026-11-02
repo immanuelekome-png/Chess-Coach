@@ -1,3 +1,9 @@
+# v3.0.0-rc.23
+
+- Add an interactive opposition lesson under Academy → Endgames. Predict either legal king reply, choose a plan, and play two king decisions while Black answers the first move. Both branches are required.
+- Keep multi-decision branch progress separate from branch completion, validate each opponent reply before moving the board, and reset the decision cursor between branches.
+- Include specific wrong-move feedback and the existing missed-concept revisit schedule. The lesson teaches opposition without promising a forced win.
+
 # v3.0.0-rc.22
 
 - Derive captured-piece lists from actual move history, including en passant and captures of promoted pieces. Promotion itself no longer appears as a captured pawn, and captures are not capped by starting-piece counts.
