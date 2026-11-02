@@ -14,6 +14,10 @@ File size is limited to 200,000 bytes and existing text to 100,000 characters/60
 - 390px frame: selected the same real file through the chooser and observed the valid preview; body client/scroll widths were 375px. Selected a generated 200,001-byte .pgn file and observed size rejection, disabled Save and the previous valid PGN text still present.
 - Generated files contain dummy chess data and remain QA inputs, not app assets. No server upload endpoint is used by the file-import implementation.
 
+## Post-publication verification
+
+GitHub Pages deployment completed successfully. A later live-browser file-picker verification attempt timed out at the tool/session level before a result could be confirmed; the session subsequently returned no tabs. This does not replace the completed pre-publication desktop/phone file-picker checks above and is not recorded as a live pass.
+
 ## Limits
 
 No physical iPhone Safari/Files picker, installed-PWA, disconnected-startup or hardware-audio check. File-provider availability/permissions can differ on a real phone. UTF-8 text is expected. Import still supports one standard-start main line, not custom-FEN games or multi-game databases. Asynchronous race cases were fixture-tested rather than induced through slow physical storage.
