@@ -15,6 +15,10 @@ Also fixes an imported-game review guard: hiding live coaching no longer prevent
 - Desktop: completed real depth 14 review of a nine-ply imported game. The cache control reported it saved. Reopening at depth 10 ran real analysis instead of reusing depth 14; choosing depth 14 reopened Saved analysis. The nonterminal imported game also reviewed successfully with Hide review & coaching enabled.
 - 390px frame: completed real depth 10 review of a four-ply imported checkmate, refreshed/reopened, and observed Saved analysis at depth 10. Analyze at selected depth visibly began a fresh run. Disabled reuse and cleared saved analysis; confirmation stated that games/progress were unchanged. Client/scroll widths were both 375px.
 
+## Actual live HTTPS after publication
+
+Opened the published rc.18 app, imported a four-ply checkmate and completed real depth 10 analysis. Reopened Review and observed Saved analysis at depth 10. This verifies the published reuse path; pre-publication phone-width checks are listed above.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected-startup, hardware-audio or simultaneous-tab write check. Cache retention is best-effort under browser storage limits. Long-game performance was not benchmarked; the cache is not a cloud backup. Cached scores remain finite-depth engine estimates and do not establish measured player skill.
