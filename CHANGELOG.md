@@ -1,3 +1,11 @@
+# v3.0.0-rc.35
+
+- Restrict arrows to legal moves for the side to move in the displayed board position. Reject empty/blocked origins, illegal pawn distances, blocked lines and moves that leave the king in check.
+- Draw knight arrows as L-shaped paths, with the long leg first and an arrowhead aligned to the final leg, in either orientation. Use the same renderer for engine suggestions.
+- Show legal destination dots/rings after choosing an arrow’s origin. Keep invalid taps available for correction, and preserve unrestricted square highlights.
+- Apply the rules consistently to mouse dragging, endpoint taps, keyboard input, review and Try moves. Filter illegal legacy arrows in memory without overwriting saved lines.
+- Add ten focused legality/geometry/input regressions covering special moves and all eight knight jumps.
+
 # v3.0.0-rc.34
 
 - Add named, device-local analysis lines accessible from Try moves and Saved games. Preserve the starting FEN, full variation, cursor, orientation and manual marks on the selected position.
