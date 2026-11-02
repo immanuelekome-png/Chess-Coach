@@ -2,7 +2,7 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const html=fs.readFileSync(require('node:path').join(__dirname,'../index.html'),'utf8');
 const elements=new Map();
-function el(){return {value:'classic',checked:true,textContent:'',children:[],dataset:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},querySelectorAll(){return []},replaceChildren(...x){this.children=x},appendChild(x){this.children.push(x)},append(...x){this.children.push(...x)},setAttribute(){}}}
+function el(){return {value:'classic',checked:true,textContent:'',children:[],style:{},dataset:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},querySelectorAll(){return []},replaceChildren(...x){this.children=x},appendChild(x){this.children.push(x)},append(...x){this.children.push(...x)},setAttribute(){}}}
 const document={getElementById(id){if(!elements.has(id))elements.set(id,el());return elements.get(id)},createElement:el,createElementNS:el,querySelectorAll(){return []}};
 const storage=new Map();const localStorage={get length(){return storage.size},key(i){return [...storage.keys()][i]},getItem(k){return storage.get(k)||null},setItem(k,v){storage.set(k,String(v))}};
 const ctx=vm.createContext({document,localStorage,crypto:require("node:crypto").webcrypto,console,setTimeout,clearTimeout});
