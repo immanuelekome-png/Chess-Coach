@@ -17,6 +17,10 @@ The finite Book repertoire contains 21 legally replayed study lines rather than 
 - Normal app: imported a ten-ply Ruy Lopez and completed real depth 10 review. All ten moves were recognized as Book at their actual low losses. Selected Bb5 and observed the named Ruy Lopez context, actual cp loss and development advice.
 - Controlled starting-position fixtures are untracked preview copies and are excluded from publication. They do not add custom-FEN import to the app.
 
+## Publication
+
+Applied the waiting update from rc.19 and observed rc.20. Imported the ten-ply Ruy Lopez on the published site, completed real depth 10 review and selected Bb5. The detail showed Book, its actual 12cp loss and the named Ruy Lopez context. Controlled-position phone/desktop coaching checks above were performed before publication.
+
 ## Limits
 
 No physical iPhone Safari, installed-PWA, disconnected-startup or hardware-audio test. Static recognition cues do not model every pawn transformation or calculate a full strategic plan. Opening coverage is deliberately finite and is not a full opening database or a calibrated accuracy standard. Automatic learner-rating adaptation remains future work requiring representative, assistance-aware data.
