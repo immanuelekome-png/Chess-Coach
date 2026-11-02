@@ -1,3 +1,10 @@
+# v3.0.0-rc.19
+
+- Add Academy’s Patterns in reviewed games summary with concrete mating/checking/capturing-reply groups and flagged pawn moves. Counts use the selected side’s latest review for each game, without duplicate counts from reopening or reanalysis.
+- Open the latest example directly at its reviewed move, then use Practice this mistake. Earlier saved cursors are replayed safely to the example; matching shorter reviews preserve fuller summaries.
+- Exclude imports by default, ignore spectator reviews, and allow optional import inclusion. Derived summaries are bounded and can be cleared without deleting saved games/results/progress.
+- Allow explicit review of paused saved history when live coaching is hidden; active native play remains hidden.
+
 # v3.0.0-rc.18
 
 - Reuse completed Stockfish reviews for matching moves, positions, engine and selected depth. Cached scores rebuild current classifications and teaching; earlier cursors can reuse a matching prefix.
