@@ -1,3 +1,10 @@
+# v3.0.0-rc.24
+
+- Import custom-start standard-chess PGNs with SetUp/FEN headers. Validate the supplied position and replay every move legally before enabling Save.
+- Preserve source position, side, counters and rights through saves, refresh, Undo/Redo and PGN re-export. Black-first move lists reserve the White column and retain original fullmove numbers.
+- Keep standard-start opening Book labels out of custom-position reviews, including cached review reconstruction. Review pattern summaries use the supplied turn/numbering and check source-position identity before opening examples.
+- Explain that capture lists and repetition history start at the supplied position. Existing standard-start saves remain compatible.
+
 # v3.0.0-rc.23
 
 - Add an interactive opposition lesson under Academy → Endgames. Predict either legal king reply, choose a plan, and play two king decisions while Black answers the first move. Both branches are required.
