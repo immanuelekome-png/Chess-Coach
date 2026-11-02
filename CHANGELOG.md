@@ -1,3 +1,10 @@
+# v3.0.0-rc.29
+
+- Record bounded assistance context on new human moves: selected level, hidden live review, interruptions, manual teaching band and hint requests for the current position.
+- Show per-move context chips and a selected-side review summary, distinguishing recorded independent settings, available assistance, hint requests and unknown provenance. These observations are not skill estimates.
+- Preserve context in local saved timelines and through Undo/Redo; reconstruct cached review context from moves rather than engine-score cache. Older/imported/spectator data is not retroactively classified as independent.
+- Keep metadata out of PGN exports and validate its shape, timeline length and human-side ownership when loading a save.
+
 # v3.0.0-rc.28
 
 - Fix novice/intermediate difficulty settings collapsing to the same minimum Stockfish UCI Elo, and styles being ignored in the active engine path.

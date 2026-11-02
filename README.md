@@ -1,6 +1,6 @@
 # Chess Coach
 
-Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.28**. Difficulty labels are approximate, not measured Elo ratings.
+Browser-local chess practice with bundled Stockfish 19 Lite, coaching, game review and interactive Academy lessons. The current application release is **3.0.0-rc.29**. Difficulty labels are approximate, not measured Elo ratings.
 
 Play at https://immanuelekome-png.github.io/Chess-Coach/ . See [CHANGELOG.md](CHANGELOG.md), [ROADMAP.md](ROADMAP.md) and the release-specific `VALIDATION-v3-rc*.md` records for changes and verification limits.
 
@@ -21,7 +21,7 @@ On the published HTTPS site, Settings → Offline & app updates shows download r
 
 ## Checks
 
-Run `npm run test:regression` for all **312 unique dependency-free checks** across twenty-six isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
+Run `npm run test:regression` for all **328 unique dependency-free checks** across twenty-seven isolated suites. This command uses Node’s built-in modules and does not need `npm install`. Individual `test:core`, `test:academy`, `test:rules` and other scripts remain available. Fixture checks do not replace real browser interaction.
 
 `npm test` / `RUN-TESTS.cmd` is the older, separate Playwright smoke workflow and requires its dependencies. Recent releases used the supported cloud browser for actual desktop and phone-width interaction; they do not claim physical iPhone Safari, hardware sound or true simultaneous-tab coverage. Dates in the concept schedule are simulated in unit checks, not verified by waiting several days.
 
@@ -57,3 +57,9 @@ Bishop coaching identifies the first friendly pawn blocking each diagonal, with 
 Bot moves now use full-strength Stockfish MultiPV scores from one completed iteration. Difficulty settings change search limits, candidate width, admitted score loss and selection probability; the 400/700/1000 settings no longer collapse to one clamped UCI Elo value. Style and personality preferences influence choices inside the selected evaluation band. Forced mates are handled separately from centipawn scores. If no complete candidate iteration arrives, the engine’s bestmove is used; illegal/failed responses pause play.
 
 Run `npm run bench:bots` to exercise the bundled engine’s Node UCI entry point on twelve curated positions at six settings. The retained report is `validation/bot-strength-rc28.json`: 72 legal choices from 72 searches, no incomplete-set fallbacks. In shared candidate-pool sampling, mean finite evaluation loss declined across settings. This checks implementation, not human strength: the labels are still approximate and are not calibrated Elo. One spectator result is not rating evidence.
+
+## Recorded assistance context
+
+New human moves retain their selected assistance level, live-review visibility, interruption setting, manual teaching band and hint-request count. Review shows recorded independent settings, enabled assistance, hint requests and unknown context for your chosen side. A request is not proof that a hint was delivered or used; earlier feedback or external help can still influence later moves. These counts are not measured skill and do not change accuracy labels or bot strength.
+
+Context stays in browser-local saves through Undo/Redo, copying and refresh. Score caches carry engine scores, while context comes from the saved move timeline. Old/imported games remain unknown instead of inferring past assistance from their current settings. The first newly played move after reopening or navigating history is conservative when prior hint history is unavailable. PGN export does not include this app-local metadata.
