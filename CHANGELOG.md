@@ -1,3 +1,10 @@
+# v3.0.0-rc.20
+
+- Add board-specific teaching for supported knight posts and current/future pawn challenges, doubled pawns, and rooks supporting passed pawns from behind on a clear file.
+- King-activity guidance accounts for remaining enemy rooks. Promotion guidance names the new piece instead of describing an imaginary isolated pawn, and automatic material/75-move draws receive no future positional plan.
+- Expand the curated opening repertoire from seven to 21 legal study lines. Name an opening family only when the matching prefixes identify one; significant losses keep their error labels rather than becoming Book.
+- Rebuild opening context when reviews are materialized from raw engine scores, including cached analysis.
+
 # v3.0.0-rc.19
 
 - Add Academy’s Patterns in reviewed games summary with concrete mating/checking/capturing-reply groups and flagged pawn moves. Counts use the selected side’s latest review for each game, without duplicate counts from reopening or reanalysis.
