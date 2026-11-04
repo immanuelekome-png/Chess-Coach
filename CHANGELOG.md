@@ -1,3 +1,9 @@
+# 3.0.0-rc.36 — Mobile app layout
+
+- Added bottom navigation, horizontal bot selection, color buttons and a full-width Start game action on phones.
+- Added compact player rows and Undo/Redo/Hint/Moves/Review dock. Coaching and review open in bottom sheets; game options retain coordinates, board tools and Try moves.
+- Desktop controls restore at wide widths without restarting the game.
+
 # v3.0.0-rc.35
 
 - Restrict arrows to legal moves for the side to move in the displayed board position. Reject empty/blocked origins, illegal pawn distances, blocked lines and moves that leave the king in check.
